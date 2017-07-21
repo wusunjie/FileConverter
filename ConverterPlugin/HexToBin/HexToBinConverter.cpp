@@ -1,11 +1,11 @@
 #include "HexToBinConverter.h"
 #include "../FileHandler.h"
 
-#include <new>
 
 FILE_CONVERTER_API AbstractConverter *GetFileConverter(void)
 {
-	return new (std::nothrow)HexToBinConverter();
+	static HexToBinConverter converter;
+	return &converter;
 }
 
 int HexToBinConverter::Convert(const char *infile, const char *outfile)

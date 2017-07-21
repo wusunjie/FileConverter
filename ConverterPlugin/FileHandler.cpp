@@ -15,6 +15,11 @@ public:
 		return 0;
 	}
 
+	int lseek(int offset, int whence)
+	{
+		return 0;
+	}
+
 	int read(char *buffer, int len)
 	{
 		return 0;
