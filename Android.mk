@@ -27,3 +27,18 @@ LOCAL_CPPFLAGS := -DFILE_CONVERTER_DLL -DFILE_CONVERTER_DLL_EXPORTS -DUNIX_FILE_
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/Includes
 
 include $(BUILD_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+
+LOCAL_MODULE_TAGS := optional
+
+LOCAL_MODULE := FileConverter
+LOCAL_SRC_FILES := main.cpp
+
+LOCAL_CPPFLAGS := -g -fno-rtti -fno-exceptions
+
+LOCAL_C_INCLUDES := $(LOCAL_PATH)/Includes
+
+LOCAL_STATIC_LIBRARIES := libFileConverter
+
+include $(BUILD_EXECUTABLE)
