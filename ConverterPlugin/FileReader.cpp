@@ -33,7 +33,7 @@ static UnixFileHandler FileReaderInst;
 
 #endif
 
-FILE_CONVERTER_LOCAL FileReader *FileHandlerFactory::GetFileReader(void)
+FILE_CONVERTER_LOCAL FileReader *FileReaderFactory::GetFileReader(void)
 {
 	return &FileReaderInst;
 }
