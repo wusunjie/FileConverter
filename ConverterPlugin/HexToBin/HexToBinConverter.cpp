@@ -8,7 +8,7 @@ FILE_CONVERTER_API AbstractConverter *GetFileConverter(void)
 	return &converter;
 }
 
-int HexToBinConverter::Convert(const char *infile, const char *outfile)
+FILE_CONVERTER_LOCAL int HexToBinConverter::Convert(const char *infile, const char *outfile)
 {
 	(void)infile;
 	(void)outfile;

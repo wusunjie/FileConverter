@@ -3,7 +3,7 @@
 
 #include "AbstractConverter.h"
 
-class HexToBinConverter: public AbstractConverter
+class FILE_CONVERTER_LOCAL HexToBinConverter: public AbstractConverter
 {
 public:
 

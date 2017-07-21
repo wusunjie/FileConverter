@@ -3,7 +3,7 @@
 
 #ifdef UNIX_FILE_SYSTEM
 
-class UnixFileHandler: public FileHandler
+class FILE_CONVERTER_LOCAL UnixFileHandler: public FileHandler
 {
 public:
 
@@ -43,7 +43,7 @@ static UnixFileHandler FileHandlerInst;
 
 #endif
 
-FileHandler *FileHandlerFactory::GetFileHandler(void)
+FILE_CONVERTER_LOCAL FileHandler *FileHandlerFactory::GetFileHandler(void)
 {
 	return &FileHandlerInst;
 }

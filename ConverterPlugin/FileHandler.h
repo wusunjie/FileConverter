@@ -1,7 +1,9 @@
 #ifndef _FILE_HANDLER_H
 #define _FILE_HANDLER_H
 
-class FileHandler
+#include "CommonDefs.h"
+
+class FILE_CONVERTER_LOCAL FileHandler
 {
 public:
 	virtual ~FileHandler(void) {}
@@ -12,7 +14,7 @@ public:
 	virtual int close(void) = 0;
 };
 
-class FileHandlerFactory
+class FILE_CONVERTER_LOCAL FileHandlerFactory
 {
 public:
 	static FileHandler *GetFileHandler(void);
