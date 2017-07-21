@@ -7,7 +7,7 @@ class FILE_CONVERTER_LOCAL HexToBinConverter: public AbstractConverter
 {
 public:
 
-	int Convert(const char *infile, const char *outfile);
+	int Convert(const char *infile, OutputDevice *device);
 };
 
 #endif

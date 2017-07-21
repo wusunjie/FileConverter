@@ -1,8 +1,9 @@
 #ifndef _ABSTRACT_CONVERTER_H
 #define _ABSTRACT_CONVERTER_H
 
-#include "FileConverter.h"
 #include "CommonDefs.h"
+
+class OutputDevice;
 
 class AbstractConverter
 {

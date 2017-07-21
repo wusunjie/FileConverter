@@ -7,6 +7,7 @@ public:
 	virtual ~OutputDevice(void) {}
 	virtual int Open(void) = 0;
 	virtual int Write(const char *buffer, int len) = 0;
+	virtual int Seek(int offset) = 0;
 	virtual int Close(void) = 0;
 };
 

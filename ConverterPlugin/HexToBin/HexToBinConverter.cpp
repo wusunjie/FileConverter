@@ -1,4 +1,6 @@
+#include "FileConverter.h"
 #include "HexToBinConverter.h"
+
 #include "../FileReader.h"
 
 
