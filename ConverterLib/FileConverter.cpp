@@ -29,11 +29,11 @@ private:
 	~FileConverterFactory(void);
 };
 
-int FileConvert(const char *con, const char *infile, const char *outfile)
+int FileConvert(const char *con, const char *infile, OutputDevice *device)
 {
 	AbstractConverter *converter = FileConverterFactory::GetConverter(con);
 	if (converter) {
-		return converter->Convert(infile, outfile);
+		return converter->Convert(infile, device);
 	}
 	else {
 		return -1;
