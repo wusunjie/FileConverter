@@ -23,7 +23,7 @@ LOCAL_SRC_FILES := \
 	ConverterPlugin/FileHandler.cpp \
 	ConverterPlugin/HexToBin/HexToBinConverter.cpp
 
-LOCAL_CPPFLAGS := -g -fno-rtti -fno-exceptions
+LOCAL_CPPFLAGS := -DUNIX_FILE_SYSTEM -g -fno-rtti -fno-exceptions
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/Includes
 

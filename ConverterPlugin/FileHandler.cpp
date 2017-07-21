@@ -1,6 +1,5 @@
 #include "FileHandler.h"
 
-#define UNIX_FILE_SYSTEM
 
 #ifdef UNIX_FILE_SYSTEM
 
