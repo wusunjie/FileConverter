@@ -5,7 +5,6 @@ include $(CLEAR_VARS)
 LOCAL_MODULE_TAGS := optional
 
 LOCAL_MODULE := libFileConverter
-LOCAL_MODULE_PATH := $(TARGET_OUT)/lib
 LOCAL_SRC_FILES := ConverterLib/FileConverter.cpp
 LOCAL_CPPFLAGS := -g -fno-rtti -fno-exceptions
 
