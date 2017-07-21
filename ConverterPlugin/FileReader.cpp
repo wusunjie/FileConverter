@@ -29,7 +29,7 @@ private:
 	int fd;
 };
 
-static UnixFileHandler FileReaderInst;
+static UnixFileReader FileReaderInst;
 
 #endif
 

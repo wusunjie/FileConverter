@@ -15,7 +15,7 @@ public:
 class FILE_CONVERTER_LOCAL FileReaderFactory
 {
 public:
-	static FileHandler *GetFileReader(void);
+	static FileReader *GetFileReader(void);
 
 private:
 	FileReaderFactory(void);
